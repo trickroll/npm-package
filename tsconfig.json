@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "lib": ["es2022"],
+
+    /* BASE OPTIONS */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "esnext",
+    "allowJs": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+
+    /* STRICTNESS */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+
+    /* IF TRANSPILING WITH TYPESCRIPT */
+    "module": "nodenext",
+    "outDir": "dist",
+    "rootDir": "src",
+    "sourceMap": true,
+
+    /* IF BUILDING FOR A LIBRARY */
+    "declaration": true,
+
+    /* IF BUILDING FOR A LIBRARY IN A MONOREPO */
+    "declarationMap": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "npm-package-tt-showcase",
+  "version": "0.0.1",
+  "description": "demo package",
+  "keywords": [
+    "demo",
+    "npm"
+  ],
+  "author": "michae",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trickroll/npm-package.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "ci": "npm run build",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2"
+  }
+}
