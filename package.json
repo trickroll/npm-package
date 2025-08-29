@@ -19,11 +19,15 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "ci": "npm run build",
-    "format": "prettier --write ."
+    "ci": "npm run build && npm run check-format && npm run test",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "test": "vitest run",
+    "dev": "vitest"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
   }
 }
